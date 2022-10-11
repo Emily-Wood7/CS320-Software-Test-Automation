@@ -20,13 +20,13 @@ You are a software engineer for Grand Strand Systems, a software engineering com
 
 You have been asked to code up a mobile application for a client and provide unit tests to verify that it meets the customer’s requirements. In order to do so, you must complete the following:
 
-**Contact Service:** In the Module Three milestone, you developed the contact service. The contact service used in-memory data structures to support storing contacts (no database required). In addition, there was no UI for this assignment. You verified the contact service through JUnit tests. The contact service contained a contact object along with the contact service. The requirements were as follows:
-/n1. Contact Class Requirements
-  /na. The contact object shall have a required unique contact ID String that cannot be longer than 10 characters. The contact ID shall not be null and shall not be updatable.
-  b. The contact object shall have a required firstName String field that cannot be longer than 10 characters. The firstName field shall not be null.
-  c. The contact object shall have a required lastName String field that cannot be longer than 10 characters. The lastName field shall not be null.
-  d. The contact object shall have a required phone String field that must be exactly 10 digits. The phone field shall not be null.
-  e. The contact object shall have a required address field that must be no longer than 30 characters. The address field shall not be null.
+**Contact Service:** In the Module Three milestone, you developed the contact service. The contact service used in-memory data structures to support storing contacts (no database required). In addition, there was no UI for this assignment. You verified the contact service through JUnit tests. The contact service contained a contact object along with the contact service. The requirements were as follows:<br/>
+1. Contact Class Requirements<br/>
+  a. The contact object shall have a required unique contact ID String that cannot be longer than 10 characters. The contact ID shall not be null and shall not be updatable.<br/>
+  b. The contact object shall have a required firstName String field that cannot be longer than 10 characters. The firstName field shall not be null.<br/>
+  c. The contact object shall have a required lastName String field that cannot be longer than 10 characters. The lastName field shall not be null.<br/>
+  d. The contact object shall have a required phone String field that must be exactly 10 digits. The phone field shall not be null.<br/>
+  e. The contact object shall have a required address field that must be no longer than 30 characters. The address field shall not be null.<br/>
 
 2. Contact Service Requirements
 The contact service shall be able to add contacts with unique ID.
