@@ -7,66 +7,105 @@
 
 package org.example;
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AppointmentServiceTest {
-
-    // set up test variables
-    final String passTestId = "0";
-    final String failTestId = "1";
-    final String passTestDate = "12122022";
-    final String passTestDescription = "Appointment Description";
-    AppointmentService appointment;
-
+class ContactTest {
+    //set up
+    final String nullTest = null;
+    final String longTest = "01234567890";
+    final String goodTest = "0123456789";
+    final String shortPhoneNumberTest = "0";
+    final String longPhoneNumberTest = "012345678901";
+    final String longAddressTest = "0123456789012345678901234567890";
+    Contact contact;
 
     @BeforeEach
-    // create a new instance for each test
+    // create a new instance before each test
     void setUp() {
-        appointment = new AppointmentService();
-    }
-
-    @AfterEach
-    // empty the arrayList after each test
-    void tearDown() {
-        AppointmentService.appointmentList.clear();
+        contact = new Contact();
     }
 
     @Test
-    // test an id that exists and one that does not exist
-    void testSearchAppointmentId() {
-        appointment.addAppointment(passTestDate, passTestDescription);
+    // testing setter and getter good test
+    void testGetContactId() {
+        contact.setContactId(goodTest);
+        assertTrue(contact.getContactId() == goodTest);
+    }
 
+    @Test
+    // testing setter invalid entries
+    void testSetContactId() {
         assertAll(
-                () -> assertEquals(passTestId, appointment.searchAppointmentId(passTestId).getAppointmentId()),
-                () -> assertThrows(IllegalArgumentException.class, () -> appointment.searchAppointmentId(failTestId).getAppointmentId())
+                () -> assertThrows(IllegalArgumentException.class, () -> contact.setContactId(nullTest)),
+                () -> assertThrows(IllegalArgumentException.class, () -> contact.setContactId(longTest))
         );
     }
 
     @Test
-    // test that each item was added to the appointment
-    void testAddAppointment() {
-        appointment.addAppointment(passTestDate, passTestDescription);
+        // testing setter and getter good test
+    void testGetFirstName() {
+        contact.setFirstName(goodTest);
+        assertTrue(contact.getFirstName() == goodTest);
+    }
+
+    @Test
+        // testing setter invalid entries
+    void testSetFirstName() {
         assertAll(
-                () -> assertEquals(passTestId, AppointmentService.appointmentList.get(0).getAppointmentId()),
-                () -> assertEquals(passTestDate, AppointmentService.appointmentList.get(0).getAppointmentDate()),
-                () -> assertEquals(passTestDescription, AppointmentService.appointmentList.get(0).getAppointmentDescription())
+                () -> assertThrows(IllegalArgumentException.class, () -> contact.setFirstName(nullTest)),
+                () -> assertThrows(IllegalArgumentException.class, () -> contact.setFirstName(longTest))
         );
     }
 
     @Test
-    void testDeleteAppointment() {
-        appointment.addAppointment(passTestDate, passTestDescription);
+        // testing setter and getter good test
+    void testGetLastName() {
+        contact.setLastName(goodTest);
+        assertTrue(contact.getLastName() == goodTest);
+    }
 
-        int appointmentListSize = AppointmentService.appointmentList.size();
+    @Test
+        // testing setter invalid entries
+    void testSetLastName() {
+        assertAll(
+                () -> assertThrows(IllegalArgumentException.class, () -> contact.setLastName(nullTest)),
+                () -> assertThrows(IllegalArgumentException.class, () -> contact.setLastName(longTest))
+        );
+    }
 
-        // delete appointment
-        appointment.deleteAppointment(passTestId);
+    @Test
+        // testing setter and getter good test
+    void testGetPhoneNumber() {
+        contact.setPhoneNumber(goodTest);
+        assertTrue(contact.getPhoneNumber() == goodTest);
+    }
 
-        // verify appointment was deleted
-        assertEquals(appointmentListSize - 1, AppointmentService.appointmentList.size());
+    @Test
+        // testing setter invalid entries
+    void testSetPhoneNumber() {
+        assertAll(
+                () -> assertThrows(IllegalArgumentException.class, () -> contact.setPhoneNumber(nullTest)),
+                () -> assertThrows(IllegalArgumentException.class, () -> contact.setPhoneNumber(shortPhoneNumberTest)),
+                () -> assertThrows(IllegalArgumentException.class, () -> contact.setPhoneNumber(longPhoneNumberTest))
+        );
+    }
+
+    @Test
+        // testing setter and getter good test
+    void testGetAddress() {
+        contact.setAddress(goodTest);
+        assertTrue(contact.getAddress() == goodTest);
+    }
+
+    @Test
+        // testing setter invalid entries
+    void testSetAddress() {
+        assertAll(
+                () -> assertThrows(IllegalArgumentException.class, () -> contact.setAddress(nullTest)),
+                () -> assertThrows(IllegalArgumentException.class, () -> contact.setAddress(longAddressTest))
+        );
     }
 }
