@@ -1,8 +1,8 @@
 /*
  * Emily Wood
- * CS 320
- * Module Five Milestone
- * Ramsey Kraya
+ * SNHU CS-320
+ * Project One
+ * October 11, 2022
  */
 
 package org.example;
