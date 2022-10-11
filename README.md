@@ -28,14 +28,14 @@ You have been asked to code up a mobile application for a client and provide uni
   d. The contact object shall have a required phone String field that must be exactly 10 digits. The phone field shall not be null.<br/>
   e. The contact object shall have a required address field that must be no longer than 30 characters. The address field shall not be null.<br/>
 
-2. Contact Service Requirements
-The contact service shall be able to add contacts with unique ID.
-The contact service shall be able to delete contacts per contactId.
-The contact service shall be able to update contact fields per contactId. The following fields are updatable:
-firstName
-lastName
-PhoneNumber
-Address
+2. Contact Service Requirements<br/>
+  a. The contact service shall be able to add contacts with unique ID.<br/>
+  b. The contact service shall be able to delete contacts per contactId.<br/>
+  c. The contact service shall be able to update contact fields per contactId. The following fields are updatable:<br/>
+      1. firstName<br/>
+      2. lastName<br/>
+      3. PhoneNumber<br/>
+      4. Address<br/>
 Task Service: In the Module Four milestone, you developed the task service. The task service used in-memory data structures to support storing tasks (no database required). In addition, there was no UI for this assignment. You verified the task service through JUnit tests. The task service contained a task object along with the task service. The requirements were as follows:
 Task Requirements
 The task object shall have a required unique task ID String that cannot be longer than 10 characters. The task ID shall not be null and shall not be updatable.
