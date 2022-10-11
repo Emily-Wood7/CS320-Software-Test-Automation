@@ -39,15 +39,15 @@ You have been asked to code up a mobile application for a client and provide uni
     
 **Task Service:** In the Module Four milestone, you developed the task service. The task service used in-memory data structures to support storing tasks (no database required). In addition, there was no UI for this assignment. You verified the task service through JUnit tests. The task service contained a task object along with the task service. The requirements were as follows:<br/>
 1. Task Requirements<br/>
-  a. The task object shall have a required unique task ID String that cannot be longer than 10 characters. The task ID shall not be null and shall not be updatable.
-  b. The task object shall have a required name String field that cannot be longer than 20 characters. The name field shall not be null.
+  a. The task object shall have a required unique task ID String that cannot be longer than 10 characters. The task ID shall not be null and shall not be updatable.<br/>
+  b. The task object shall have a required name String field that cannot be longer than 20 characters. The name field shall not be null.<br/>
   c. The task object shall have a required description String field that cannot be longer than 50 characters. The description field shall not be null.
-Task Service Requirements
-The task service shall be able to add tasks with a unique ID.
-The task service shall be able to delete tasks per taskId.
-The task service shall be able to update task fields per taskId. The following fields are updatable:
-name
-description
+2. Task Service Requirements<br/>
+  a. The task service shall be able to add tasks with a unique ID.<br/>
+  b. The task service shall be able to delete tasks per taskId.<br/>
+  c. The task service shall be able to update task fields per taskId. The following fields are updatable:<br/>
+    1. name<br/>
+    2. description<br/>
 Appointment Service: In the Module Five milestone, you developed the appointment service. The appointment service used in-memory data structures to support storing appointments (no database required). In addition, there was no UI for this assignment. You verified the appointment service through JUnit tests. The appointment service contained an appointment object along with the appointment service. The requirements were as follows:
 Appointment Requirements
 The appointment object shall have a required unique appointment ID String that cannot be longer than 10 characters. The appointment ID shall not be null and shall not be updatable.
