@@ -48,11 +48,12 @@ You have been asked to code up a mobile application for a client and provide uni
   c. The task service shall be able to update task fields per taskId. The following fields are updatable:<br/>
     1. name<br/>
     2. description<br/>
-Appointment Service: In the Module Five milestone, you developed the appointment service. The appointment service used in-memory data structures to support storing appointments (no database required). In addition, there was no UI for this assignment. You verified the appointment service through JUnit tests. The appointment service contained an appointment object along with the appointment service. The requirements were as follows:
-Appointment Requirements
-The appointment object shall have a required unique appointment ID String that cannot be longer than 10 characters. The appointment ID shall not be null and shall not be updatable.
-The appointment object shall have a required appointment Date field. The appointmentDate field cannot be in the past. The appointmentDate field shall not be null. Note: Use java.util.Date for the appointmentDate field and use before(new Date()) to check if the date is in the past.
-The appointment object shall have a required description String field that cannot be longer than 50 characters. The description field shall not be null.
-Appointment Service Requirements
-The appointment service shall be able to add appointments with a unique appointmentId.
-The appointment service shall be able to delete appointments per appointmentId.
+    
+**Appointment Service:** In the Module Five milestone, you developed the appointment service. The appointment service used in-memory data structures to support storing appointments (no database required). In addition, there was no UI for this assignment. You verified the appointment service through JUnit tests. The appointment service contained an appointment object along with the appointment service. The requirements were as follows:<br/>
+1. Appointment Requirements<br/>
+  a. The appointment object shall have a required unique appointment ID String that cannot be longer than 10 characters. The appointment ID shall not be null and shall not be updatable.<br/>
+  b. The appointment object shall have a required appointment Date field. The appointmentDate field cannot be in the past. The appointmentDate field shall not be null. Note: Use java.util.Date for the appointmentDate field and use before(new Date()) to check if the date is in the past.
+  c. The appointment object shall have a required description String field that cannot be longer than 50 characters. The description field shall not be null.<br/>
+2. Appointment Service Requirements<br/>
+  a. The appointment service shall be able to add appointments with a unique appointmentId.<br/>
+  b. The appointment service shall be able to delete appointments per appointmentId.
