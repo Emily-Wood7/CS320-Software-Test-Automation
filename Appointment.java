@@ -1,6 +1,6 @@
 /*
  * Emily Wood
- * CS 320
+ * SNHU CS-320
  * Project One
  * October 11, 2022
  */
