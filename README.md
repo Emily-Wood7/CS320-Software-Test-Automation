@@ -31,7 +31,7 @@ You have been asked to code up a mobile application for a client and provide uni
 2. Contact Service Requirements<br/>
   a. The contact service shall be able to add contacts with unique ID.<br/>
   b. The contact service shall be able to delete contacts per contactId.<br/>
-  c. The contact service shall be able to update contact fields per contactId. The following fields are updatable:<br/>
+  c. The contact service shall be able to update contact fields per contactId. The following fields are updatable:
     1. firstName<br/>
     2. lastName<br/>
     3. PhoneNumber<br/>
