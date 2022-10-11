@@ -32,15 +32,16 @@ You have been asked to code up a mobile application for a client and provide uni
   a. The contact service shall be able to add contacts with unique ID.<br/>
   b. The contact service shall be able to delete contacts per contactId.<br/>
   c. The contact service shall be able to update contact fields per contactId. The following fields are updatable:<br/>
-      1. firstName<br/>
-      2. lastName<br/>
-      3. PhoneNumber<br/>
-      4. Address<br/>
-Task Service: In the Module Four milestone, you developed the task service. The task service used in-memory data structures to support storing tasks (no database required). In addition, there was no UI for this assignment. You verified the task service through JUnit tests. The task service contained a task object along with the task service. The requirements were as follows:
-Task Requirements
-The task object shall have a required unique task ID String that cannot be longer than 10 characters. The task ID shall not be null and shall not be updatable.
-The task object shall have a required name String field that cannot be longer than 20 characters. The name field shall not be null.
-The task object shall have a required description String field that cannot be longer than 50 characters. The description field shall not be null.
+    1. firstName<br/>
+    2. lastName<br/>
+    3. PhoneNumber<br/>
+    4. Address
+    
+**Task Service:** In the Module Four milestone, you developed the task service. The task service used in-memory data structures to support storing tasks (no database required). In addition, there was no UI for this assignment. You verified the task service through JUnit tests. The task service contained a task object along with the task service. The requirements were as follows:<br/>
+1. Task Requirements<br/>
+  a. The task object shall have a required unique task ID String that cannot be longer than 10 characters. The task ID shall not be null and shall not be updatable.
+  b. The task object shall have a required name String field that cannot be longer than 20 characters. The name field shall not be null.
+  c. The task object shall have a required description String field that cannot be longer than 50 characters. The description field shall not be null.
 Task Service Requirements
 The task service shall be able to add tasks with a unique ID.
 The task service shall be able to delete tasks per taskId.
